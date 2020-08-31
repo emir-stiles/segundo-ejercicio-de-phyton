@@ -1,9 +1,9 @@
-numero = int(input("escribe un numero "))
-mod = numero % 2 
-mod4 = numero % 4 
-if mod == 0 and mod4 == 0:
-    print("el numero es multiplo de 2 y 4")
-elif mod == 0 and mod4 != 0:
-        print("el numero solo es multiplo de 2")
+numero = int(input("escribe el numero de la cuenta "))
+check = int(input("escribe el total de clientes a distribuir el total de la cuenta "))
+mod = numero % check
+div = (numero / check)
+div1 = str(div)
+if mod == 0:
+    print("la cuenta es  " + div1)
 else : 
-        print("es un numero impar")
+        print("la cuenta no se puede dividir en partes iguales")
